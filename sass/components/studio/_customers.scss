@@ -1,0 +1,51 @@
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-black-color);
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.customer__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customer__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition: border var(--transition-origin);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--logo-hover-color);
+    }
+}
+
+.customer__icon {
+    fill: #afb1b8;
+
+    transition: fill var(--transition-origin);
+
+    .customer__link:hover &,
+    .customer__link:focus & {
+        fill: var(--logo-hover-color);
+    }
+}
