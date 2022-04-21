@@ -22,15 +22,31 @@ img {
 }
 
 .container {
-    width: 1200px;
+    min-width: 320px;    
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid tomato;
+
+    @media screen and (min-width:480px) {
+        max-width: 480px;       
+        outline: 1px solid green; 
+        
+    }
+    @media screen and (min-width:768px) {
+        max-width: 786px;
+        outline: 1px solid blue;    
+    }
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+        outline: 1px solid yellow;
+    
+    }
 }
 
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
 }
 
 .visually-hidden {
