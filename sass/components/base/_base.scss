@@ -28,31 +28,26 @@ a {
 }
 
 .container {
-    min-width: 320px;    
+    max-width: 480px;    
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid tomato;
-
-    @media screen and (min-width:480px) {
-        max-width: 480px;       
-        outline: 1px solid green; 
-        
-    }
-    @media screen and (min-width:768px) {
-        max-width: 768px;
-        outline: 1px solid blue;    
+    margin-right: auto;    
+  
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        max-width: 768px;           
     }
     @media screen and (min-width:1200px) {
-        max-width: 1200px;
-        outline: 1px solid yellow;
-    
+        max-width: 1200px;    
     }
 }
 
 .section {
     padding: 60px 0;
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .visually-hidden {
