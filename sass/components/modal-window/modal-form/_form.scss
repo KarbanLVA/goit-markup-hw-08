@@ -3,6 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 370px;
+    @media screen and (min-width:1200px) {
+        width: 448px;
+    }
 }
 
 .modal-form__name {

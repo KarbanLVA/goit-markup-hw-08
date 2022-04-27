@@ -1,3 +1,9 @@
+.join {
+    padding: 60px 0;
+    @media screen and (min-width:1200px) {
+        padding: 0;
+    }
+}
 .join__title {
     margin-bottom: 20px;
 
@@ -11,7 +17,7 @@
 
 .join__list {
     display: flex;
-    list-style: none;
+    justify-content: center;    
 }
 
 .join__item:not(:last-child) {

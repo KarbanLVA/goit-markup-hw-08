@@ -1,5 +1,11 @@
 .subscride {
-    margin-left: auto;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-left: auto;
+        margin-right: auto;
+    }   
+    @media screen and (min-width:1200px) {
+        margin-left: auto;
+    }
 }
 
 .subscride__title {
@@ -12,20 +18,29 @@
     text-transform: uppercase;
     color: var(--main-white-color);
 }
-
 .subscride__form {
-    display: flex;
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: baseline;        
+    }  
 }
 
 .subscride__input {
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding: 15px 16px;
-    width: 358px;
-
+    width: 100%;
+    
     background-color: #2F303A;
     color: var(--main-white-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 450px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 358px;
+        margin-right: 12px;
+    }
 }
 
 .subscride__input::placeholder {
@@ -37,6 +52,8 @@
 }
 
 .subscride__button {
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;

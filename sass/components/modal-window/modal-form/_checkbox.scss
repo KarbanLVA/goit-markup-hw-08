@@ -12,10 +12,13 @@
     cursor: pointer;
 
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+    }
 }
 
 .checkbox__input {
@@ -40,5 +43,9 @@
 
 
 .checkbox__link {
+    font-size: 12px;    
     color: var(--logo-hover-color);
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+    }
 }

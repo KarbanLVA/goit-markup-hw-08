@@ -23,8 +23,7 @@
 }
 
 .customer__item {
-    flex-basis: calc(100% / 2 - 30px);
-    // max-width: 210px;
+    flex-basis: calc(100% / 2 - 30px);    
     &:nth-child(2n+1) {
         margin-right: 30px;
     }
