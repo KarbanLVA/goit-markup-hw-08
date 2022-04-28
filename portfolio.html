@@ -14,11 +14,51 @@
 </head>
 
 <body>    
-    <!--HEADER  -->
     <header class="header">
         <div class="container header__container">
     
             <a class="logo logo__top" href="">Web<span class="logo__top--studio">Studio</span></a>
+    
+            <button class="header-botton" aria-expanded="false" type="button" aria-label="кнопка открытия меню"data-menu-button>                
+                <svg class="header-botton__icon" width="40" height="40">
+                    <use class="header-buton__icon--menu"
+                        href="./images/icons.svg/header/mobile/symbol-defs.svg#icon-menu_40px"></use>
+                    <use class="header-buton__icon--close"
+                        href="./images/icons.svg/header/mobile/symbol-defs.svg#icon-close_40px"></use>
+                </svg>
+            </button>
+    
+            <!-- мобильное меню -->
+            <div class="mobile-menu" data-menu>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="./index.html">Студия</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__group">
+                    <ul class="mobile-contact">
+                        <li class="mobile-contact__item"><a class="mobile-contact__link--tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="mobile-contact__item"><a                                 class="mobile-contact__link--mail"href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-socials">
+                        <li class="mobile-socials__item"><a class="mobile-socials__link" href=""
+                            target="blank" rel="noopener noreferrer">Instagram</a>
+                        </li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link" href=""
+                            target="blank" rel="noopener noreferrer">Twitter</a>
+                        </li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link" href=""
+                            target="blank" rel="noopener noreferrer">Facebook</a>
+                        </li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link" href=""
+                            target="blank" rel="noopener noreferrer">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     
             <nav class="navigation">
                 <ul class="navigation__list">
@@ -54,10 +94,10 @@
             </ul>
     
         </div>
-    </header>r>
+    </header>
     
+    <!-- главная секция -->
     <main>
-        <!-- главная секция -->
         <section class="section section-portfolio">
             <div class="container">
                 <h1 class="section__title visually-hidden">Портфолио</h1>
@@ -78,11 +118,27 @@
                     class="grid-buttons__item"><button class="button-portfolio" type="button">Маркетинг</button>
                     </li>
                 </ul>
-                <ul class="grid-cards">                    
+                <ul class="grid-cards">                     
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Технокряк.jpg" alt="Технокряк" width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="" 
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/1m-img.jpg 1x,
+                                                ./images/portfolio/tablet/1m-img@2x.jpg 2x" 
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/1s-img.jpg 1x,
+                                                ./images/portfolio/mobile/1s-img@2x.jpg 2x"
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Технокряк.jpg" alt="Технокряк" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                             исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -95,7 +151,23 @@
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Постер-New-Orlean-vs-Golden-Star.jpg" alt="New-Orlean-vs-Golden-Star" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="" 
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/2m-img.jpg 1x,
+                                                ./images/portfolio/tablet/2m-img@2x.jpg 2x" 
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/2s-img.jpg 1x,
+                                                ./images/portfolio/mobile/2s-img@2x.jpg 2x" 
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Постер-New-Orlean-vs-Golden-Star.jpg" alt="New-Orlean-vs-Golden-Star" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -108,7 +180,23 @@
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Ресторан-Seafood.jpg" alt="Ресторан-Seafood" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="" 
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/3m-img.jpg 1x,
+                                                ./images/portfolio/tablet/3m-img@2x.jpg 2x" 
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/3s-img.jpg 1x,
+                                                ./images/portfolio/mobile/3s-img@2x.jpg 2x" 
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Ресторан-Seafood.jpg" alt="Ресторан-Seafood" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -121,7 +209,23 @@
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Проект-Prime.jpg" alt="Проект-Prime" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="" 
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/4m-img.jpg 1x,
+                                                ./images/portfolio/tablet/4m-img@2x.jpg 2x" 
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/4s-img.jpg 1x,
+                                                ./images/portfolio/mobile/4s-img@2x.jpg 2x" 
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Проект-Prime.jpg" alt="Проект-Prime" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -134,7 +238,23 @@
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Проект-Boxes.jpg" alt="Проект-Boxes" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="" 
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/5m-img.jpg 1x,
+                                                ./images/portfolio/tablet/5m-img@2x.jpg 2x" 
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/5s-img.jpg 1x,
+                                                ./images/portfolio/mobile/5s-img@2x.jpg 2x" 
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Проект-Boxes.jpg" alt="Проект-Boxes" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -147,7 +267,23 @@
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Inspiration-has-no-Borders.jpg" alt="Inspiration-has-no-Borders" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="" 
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/6m-img.jpg 1x,
+                                                ./images/portfolio/tablet/6m-img@2x.jpg 2x" 
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/6s-img.jpg 1x,
+                                                ./images/portfolio/mobile/6s-img@2x.jpg 2x" 
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Inspiration-has-no-Borders.jpg" alt="Inspiration-has-no-Borders" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -160,7 +296,23 @@
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Издание-Limited-Edition.jpg" alt="Издание-Limited-Edition" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="" 
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/7m-img.jpg 1x,
+                                                ./images/portfolio/tablet/7m-img@2x.jpg 2x" 
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/7s-img.jpg 1x,
+                                                ./images/portfolio/mobile/7s-img@2x.jpg 2x" 
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Издание-Limited-Edition.jpg" alt="Издание-Limited-Edition" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -173,7 +325,23 @@
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Проект-LAB.jpg" alt="Проект-LAB" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset=""
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/8m-img.jpg 1x,
+                                                ./images/portfolio/tablet/8m-img@2x.jpg 2x" 
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/8s-img.jpg 1x,
+                                                ./images/portfolio/mobile/8s-img@2x.jpg 2x" 
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Проект-LAB.jpg" alt="Проект-LAB" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -186,7 +354,23 @@
                     <li class="grid-cards__item">
                         <a class="grid-cards__link" href="">
                             <div class="overlay">
-                                <img class="overlay__img" src="./images/portfolio/Growing-Business.jpg" alt="Growing-Business" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        srcset="" 
+                                        media="(min-width:1200px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/tablet/9m-img.jpg 1x,
+                                                ./images/portfolio/tablet/9m-img@2x.jpg 2x"
+                                        media="(min-width:768px) and (max-width:1199px)" 
+                                        type="image/jpg">
+                                    <source 
+                                        srcset="./images/portfolio/mobile/9s-img.jpg 1x,
+                                                ./images/portfolio/mobile/9s-img@2x.jpg 2x" 
+                                        media="(max-width:767px)"
+                                        type="image/jpg">
+                                    <img class="overlay__img" src="./images/portfolio/Growing-Business.jpg" alt="Growing-Business" width="450" height="294">
+                                </picture>
                                 <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -202,7 +386,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer"> 
         <div class="container">
             <div class="footer-block">
                 <a class="logo logo__bottom" href="">Web<span class="logo__bottom--studio">Studio</span></a>
@@ -265,8 +449,9 @@
                     </button>
                 </form>
             </div>
-        </div>
-    
+        </div>    
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
