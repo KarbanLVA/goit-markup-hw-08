@@ -19,7 +19,7 @@
     
             <a class="logo logo__top" href="">Web<span class="logo__top--studio">Studio</span></a>
     
-            <button class="header-botton" aria-expanded="false" type="button" aria-label="кнопка открытия меню"data-menu-button>                
+            <button class="header-botton" aria-expanded="false" type="button" aria-label="кнопка открытия меню" data-menu-button>                
                 <svg class="header-botton__icon" width="40" height="40">
                     <use class="header-buton__icon--menu"
                         href="./images/icons.svg/header/mobile/symbol-defs.svg#icon-menu_40px"></use>
@@ -40,7 +40,8 @@
                 <div class="mobile-menu__group">
                     <ul class="mobile-contact">
                         <li class="mobile-contact__item"><a class="mobile-contact__link--tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                        <li class="mobile-contact__item"><a                                 class="mobile-contact__link--mail"href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <li class="mobile-contact__item">
+                            <a class="mobile-contact__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
                     </ul>
                     <ul class="mobile-socials">
@@ -124,7 +125,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source
-                                        srcset="" 
+                                        srcset="./images/portfolio/desktop/1l-img.jpg 1x,
+                                                ./images/portfolio/desktop/1l-img@2x.jpg 2x" 
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -153,7 +155,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source 
-                                        srcset="" 
+                                        srcset="./images/portfolio/desktop/2l-img.jpg 1x,
+                                                ./images/portfolio/desktop/2l-img@2x.jpg 2x" 
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -182,7 +185,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source 
-                                        srcset="" 
+                                        srcset="./images/portfolio/desktop/3l-img.jpg 1x,
+                                                ./images/portfolio/desktop/3l-img@2x.jpg 2x" 
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -211,7 +215,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source 
-                                        srcset="" 
+                                        srcset="./images/portfolio/desktop/4l-img.jpg 1x,
+                                                ./images/portfolio/desktop/4l-img@2x.jpg 2x" 
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -240,7 +245,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source 
-                                        srcset="" 
+                                        srcset="./images/portfolio/desktop/5l-img.jpg 1x,
+                                                ./images/portfolio/desktop/5l-img@2x.jpg 2x" 
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -269,7 +275,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source 
-                                        srcset="" 
+                                        srcset="./images/portfolio/desktop/6l-img.jpg 1x,
+                                                ./images/portfolio/desktop/6l-img@2x.jpg 2x" 
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -298,7 +305,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source 
-                                        srcset="" 
+                                        srcset="./images/portfolio/desktop/7l-img.jpg 1x,
+                                                ./images/portfolio/desktop/7l-img@2x.jpg 2x" 
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -327,7 +335,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source 
-                                        srcset=""
+                                        srcset="./images/portfolio/desktop/8l-img.jpg 1x,
+                                                ./images/portfolio/desktop/8l-img@2x.jpg 2x"
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -356,7 +365,8 @@
                             <div class="overlay">
                                 <picture>
                                     <source 
-                                        srcset="" 
+                                        srcset="./images/portfolio/desktop/9l-img.jpg 1x,
+                                                ./images/portfolio/desktop/9l-img@2x.jpg 2x" 
                                         media="(min-width:1200px)" 
                                         type="image/jpg">
                                     <source 
@@ -386,57 +396,59 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer"> 
-        <div class="container">
-            <div class="footer-block">
-                <a class="logo logo__bottom" href="">Web<span class="logo__bottom--studio">Studio</span></a>
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__item">
-                            <a class="address__map" href="https://goo.gl/maps/c1n4icCPhH8XGdS66" target="_blank"
-                                rel="noreferrer   noopener">г. Киев, пр-т Леси Украинки, 26</a>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__box">
+                <div class="footer__block">
+                    <a class="logo logo__bottom" href="">Web<span class="logo__bottom--studio">Studio</span></a>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__item">
+                                <a class="address__map" href="https://goo.gl/maps/c1n4icCPhH8XGdS66" target="_blank"
+                                    rel="noreferrer   noopener">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__contact" href="maito:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__contact" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join">
+                    <h3 class="join__title">присоединяйтесь</h3>
+                    <ul class="join__list">
+                        <li class="join__item">
+                            <a class="join__link" href="">
+                                <svg class="join__icon" width="20" height="20">
+                                    <use href="./images/icons.svg/social-links/assy.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__contact" href="maito:info@example.com">info@example.com</a>
+                        <li class="join__item">
+                            <a class="join__link" href="">
+                                <svg class="join__icon" width="20" height="20">
+                                    <use href="./images/icons.svg/social-links/assy.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item">
-                            <a class="address__contact" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="join__item">
+                            <a class="join__link" href="">
+                                <svg class="join__icon" width="20" height="20">
+                                    <use href="./images/icons.svg/social-links/assy.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__item">
+                            <a class="join__link" href="">
+                                <svg class="join__icon" width="20" height="20">
+                                    <use href="./images/icons.svg/social-links/assy.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="join">
-                <h3 class="join__title">присоединяйтесь</h3>
-                <ul class="join__list">
-                    <li class="join__item">
-                        <a class="join__link" href="">
-                            <svg class="join__icon" width="20" height="20">
-                                <use href="./images/icons.svg/social-links/assy.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a class="join__link" href="">
-                            <svg class="join__icon" width="20" height="20">
-                                <use href="./images/icons.svg/social-links/assy.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a class="join__link" href="">
-                            <svg class="join__icon" width="20" height="20">
-                                <use href="./images/icons.svg/social-links/assy.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a class="join__link" href="">
-                            <svg class="join__icon" width="20" height="20">
-                                <use href="./images/icons.svg/social-links/assy.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="subscride">
                 <h3 class="subscride__title">Подпишитесь на рассылку</h3>
@@ -449,7 +461,8 @@
                     </button>
                 </form>
             </div>
-        </div>    
+        </div>
+    
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
