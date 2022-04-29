@@ -1,10 +1,9 @@
 .best {
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;              
     }
-    @media screen and (min-width:1200px) {
-        display: flex;
+    @media screen and (min-width:1200px) {        
         flex-wrap: nowrap;       
     }
 }

@@ -1,13 +1,8 @@
 .grid-cards {
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;         
-    }
-    @media screen and (min-width:1200px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 }
 .grid-cards__item {
@@ -35,9 +30,6 @@
         }        
     }
 }
-
-
-
 .grid-cards__link {
     display: block;  
 
