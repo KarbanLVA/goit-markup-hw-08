@@ -1,6 +1,12 @@
 .description {
     padding: 20px 24px;
-    border-color: 1px solid #eeeeee;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    &-first {
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            padding-bottom: 56px;
+         }         
+    }
 }
 
 .description__title {
